@@ -4,8 +4,7 @@ import { BrowserRouter as Router, Routes, Switch, Route,  Link } from "react-rou
 import Inicio from "./Components/Inicio"
 import Contacto from "./Components/Contacto"
 import Work from "./Components/Work"
-import Nosotros from "./Components/Nosotros"
-import Usuarios from "./Components/Usuarios"
+import Game from "./Components/Game"
 import Formacion from "./Components/Formacion";
 import ParticleBackground from "./ParticleBackground";
 
@@ -35,8 +34,8 @@ function App() {
             <Link className="btn btn-dark btn-sm" to="/contacto">
               Contacto
             </Link>
-            <Link className="btn btn-dark btn-sm" to="/nosotros">
-              Nosotros
+            <Link className="btn btn-dark btn-sm" to="/game">
+              Game
             </Link>
           </div>
         </header>
@@ -46,9 +45,8 @@ function App() {
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/formacion" element={<Formacion />} />
           <Route path="/portfolio" element={<Work />} />
-          <Route path="/nosotros" element={<Nosotros />} />
+          <Route path="/game" element={<Game />} />
           <Route path="/inicio" element={<Inicio />} />
-          <Route path="/nosotros/:id" element={<Usuarios />} />
         </Routes>
 
       </div>
@@ -76,8 +74,8 @@ function App() {
               Contacto
             </Link></li>
           <li className="footer li">
-            <Link className="nav-link px-2 text-muted" to="/nosotros">
-              Nosotros
+            <Link className="nav-link px-2 text-muted" to="/game">
+              Game
             </Link></li>
         </ul>
 

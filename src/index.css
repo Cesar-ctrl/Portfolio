@@ -1,3 +1,5 @@
+/*-----------------------Html Area -------------------*/
+
 #particles-js{
   height: 100vh;
   width: 100%;
@@ -55,6 +57,7 @@ body {
   flex-direction: column;
 }
 
+/*----------------------Inicio Area -------------------*/
 .inicio.main{
   display: flex;
   flex-direction: column;
@@ -82,6 +85,8 @@ body {
   
 }
 
+/*-----------------------Footer Area -------------------*/
+
 footer{
   display: flex;
   flex-direction: row;
@@ -89,7 +94,7 @@ footer{
   align-items: center;
   background: rgb(2,1,1);
   background: linear-gradient(0deg, rgba(2,1,1,0.874124649859944) 17%, rgba(2,1,1,0.8965336134453782) 28%, rgba(2,1,1,0.874124649859944) 38%, rgba(2,1,1,0.7984943977591037) 51%, rgba(0,29,11,0.7732843137254902) 65%, rgba(0,42,12,0.6724439775910365) 75%, rgba(0,56,4,0.5575980392156863) 100%);
-  margin-top: 15vh;
+  margin-top: 12vh;
 }
 .footer{
   list-style:none;
@@ -108,6 +113,7 @@ footer{
   position: relative;
 }
 
+/*-----------------------Formacion Area -------------------*/
 
 .formacion.main{
   padding: 2vw;
@@ -119,6 +125,7 @@ footer{
   margin-top: 1vh;
 }
 
+/*-----------------------Porfolio o trabajos Area -------------------*/
 
 .work.group{
   display: flex;
@@ -151,6 +158,9 @@ a.work.card{
 
 }
 
+
+/*----------------------Contacto Area -------------------*/
+
 .contacto.form{
   position: relative;
     display: flex;
@@ -172,3 +182,35 @@ textarea{
   padding-bottom: 2vh;
   margin-bottom: 2vh;
 }
+
+
+/*-----------------------Game Area -------------------*/
+
+.game-area {
+  position: relative;
+  margin: 10px auto;
+  width: 450px;
+  height: 450px;
+  border: 2px solid #000;
+  background-image: url("../public/img/game-background.jpg");
+  background-size: cover;
+}
+
+.snake-dot {
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  background-color: #000;
+  border: 1px solid #fff;
+  z-index: 2;
+}
+
+.snake-food {
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  background: red;
+  border: 1px solid #fff;
+  z-index: 1;
+}
+
