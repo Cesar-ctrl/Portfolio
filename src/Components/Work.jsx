@@ -12,8 +12,8 @@ const Works = () => {
 
     return <div>
         <h1>Works</h1>
-        <div className="card-group">
-            <a href='https://github.com/Cesar-ctrl/cesarinsta' className="card">
+        <div className="work group">
+            <a href='https://github.com/Cesar-ctrl/cesarinsta' className="work card">
                 <style>{css}</style>
                 <img src={process.env.PUBLIC_URL + '/img/home.PNG'} alt="home" />{/** process.env.PUBLIC_URL trae la url baseo url pública. */}
                 <div className="card-body">
@@ -23,9 +23,9 @@ profiles and delete or edit comments on your own posts.</p>
                 </div>
             </a>
 
-            <a href="https://cesar-ctrl.github.io"className="card">
+            <a href="https://cesar-ctrl.github.io"className="work card">
                 <style>{css}</style>
-                <img src={'my-app/img/Dnd.PNG'} alt="home" />
+                <img src={process.env.PUBLIC_URL +'/img/Dnd.PNG'} alt="home" />
                 <div className="card-body">
                     <p className="card-text">Designed and developed a web guide about Dungeons and Dragons game, using HTML, CSS and
 JavaScript, among other technologies. This project helped me to improve my layout skills, as well as my
@@ -34,7 +34,7 @@ javascript knowledge. It also allowed me to learn how to consume REST web servic
             </a>
 
             
-            <a href="https://cesar-ctrl.github.io/proyecto2/"className="card">
+            <a href="https://cesar-ctrl.github.io/proyecto2/"className="work card">
                 
                 <img src={process.env.PUBLIC_URL +'/img/CrudTareas.PNG'} alt="27" />
                 <div className="card-body">

@@ -20,25 +20,26 @@ function App() {
   return(
     <Router>
       <ParticleBackground />
-      <div className="container mt-5">
-        <header className="btn-group">
-          <Link className="btn btn-dark btn-sm" to="/inicio" onClick={() => setPage('inicio')}>
-            Inicio
-          </Link>
-          <Link className="btn btn-dark btn-sm" to="/formacion" onClick={() => setPage('formacion')}>
-            Formacion
-          </Link>
-          <Link className="btn btn-dark btn-sm" to="/portfolio">
-            Work
-          </Link>
-          <Link className="btn btn-dark btn-sm" to="/contacto">
-            Contacto
-          </Link>
-          <Link className="btn btn-dark btn-sm" to="/nosotros">
-            Nosotros
-          </Link>
+      <div className="container">
+        <header className="header">
+          <div className="btn-group">
+            <Link className="btn btn-dark btn-sm" to="/inicio" onClick={() => setPage('inicio')}>
+              Inicio
+            </Link>
+            <Link className="btn btn-dark btn-sm" to="/formacion" onClick={() => setPage('formacion')}>
+              Formacion
+            </Link>
+            <Link className="btn btn-dark btn-sm" to="/portfolio">
+              Work
+            </Link>
+            <Link className="btn btn-dark btn-sm" to="/contacto">
+              Contacto
+            </Link>
+            <Link className="btn btn-dark btn-sm" to="/nosotros">
+              Nosotros
+            </Link>
+          </div>
         </header>
-
 
         <hr />
         <Routes>
@@ -51,37 +52,37 @@ function App() {
         </Routes>
 
       </div>
-      <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <ul className='nav col-md-4 mb-0 '>
-          <li className="nav-item"><a href="#" className="nav-link px-2">Email: amadocesar02@gmail.com</a></li>
-          <li className="nav-item"><a href="#" className="nav-link px-2 ">Phone: +34 601 314 076</a></li>
-          <li className="nav-item"><a href="https://www.linkedin.com/in/césar-amado-096087232/" className="nav-link px-2">LinkedIn: https://www.linkedin.com/in/césar-amado-096087232/</a></li>
+      <footer className="footer">
+        <ul className='footer ul1'>
+          <li className="footer li"><a href="#" className="nav-link px-2">Email: amadocesar02@gmail.com</a></li>
+          <li className="footer li"><a href="#" className="nav-link px-2 ">Phone: +34 601 314 076</a></li>
+          <li className="footer li"><a href="https://www.linkedin.com/in/césar-amado-096087232/" className="nav-link px-2">LinkedIn: https://www.linkedin.com/in/césar-amado-096087232/</a></li>
         </ul>
-        <ul className="nav col-md-4 justify-content-end">
-          <li className="nav-item">
+        <ul className="footer ul2">
+          <li className="footer li">
             <Link className="nav-link px-2 text-muted" to="/">
               Inicio
             </Link></li>
-          <li className="nav-item">
+          <li className="footer li">
             <Link className="nav-link px-2 text-muted" to="/formacion">
               Formacion
             </Link></li>
-          <li className="nav-item">
+          <li className="footer li">
             <Link className="nav-link px-2 text-muted" to="/portfolio">
               Work
             </Link></li>
-          <li className="nav-item">
+          <li className="footer li">
             <Link className="nav-link px-2 text-muted" to="/contacto">
               Contacto
             </Link></li>
-          <li className="nav-item">
+          <li className="footer li">
             <Link className="nav-link px-2 text-muted" to="/nosotros">
               Nosotros
             </Link></li>
         </ul>
 
       </footer>
-          
+      
       
     </Router>
       

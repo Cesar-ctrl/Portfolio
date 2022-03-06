@@ -13,16 +13,138 @@
   padding: 0; 
   box-sizing: border-box;
 }
+header{
+  display: flex;
+  padding-top: 3rem!important;
+  background: rgb(2,1,1);
+  background: linear-gradient(180deg, rgba(2,1,1,0.874124649859944) 0%, rgba(2,1,1,0.8965336134453782) 11%, rgba(2,1,1,0.874124649859944) 20%, rgba(2,1,1,0.7984943977591037) 33%, rgba(0,29,11,0.7732843137254902) 65%, rgba(0,42,12,0.6724439775910365) 75%, rgba(0,56,4,0.5575980392156863) 100%);
 
+}
 body {
   background: radial-gradient(circle, rgba(2,1,1,0.874124649859944) 17%, rgba(2,1,1,0.8965336134453782) 28%, rgba(2,1,1,0.874124649859944) 38%, rgba(2,1,1,0.7984943977591037) 51%, rgba(0,29,11,0.7732843137254902) 65%, rgba(0,42,12,0.6724439775910365) 75%, rgba(0,56,4,0.5575980392156863) 100%);
   background-image: url("../public/img/hojasfondo.jpg");
-  background-size:cover;
+  background-size:110vw;
   height: 100vh; 
-width: 100%;
+  width: 100%;
   position: relative;
   color: rgb(255, 255, 255);
   font-size: 18px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+}
+.btn-group, .btn-group-vertical {
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+  flex-direction: row;
+}
+.p.desc{
+  text-align: justify;
+  margin-left: 8vw;
+  margin-right: 5vw;
+}
+.main{
+  margin-top: 3rem!important;
+  position: relative;
+}
+
+.nav{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 3rem!important;
+  flex-direction: column;
+}
+
+.inicio.main{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(49, 67, 53, 0.46);
+}
+.inicio.contenedor{
+  display: flex;
+  justify-content: space-around;
+}
+.inicio.introduccion{
+  text-align: justify;
+}
+.inicio.h1{
+  margin-left: 5vw;
+  margin-bottom: 4vh;
+}
+
+.inicio.p.subt{
+  margin-left: 2vw;
+}
+.inicio.ul{
+  background-color: rgba(0, 106, 23, 0.7);
+}
+.inicio.li{
+  
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(2,1,1);
+  background: linear-gradient(0deg, rgba(2,1,1,0.874124649859944) 17%, rgba(2,1,1,0.8965336134453782) 28%, rgba(2,1,1,0.874124649859944) 38%, rgba(2,1,1,0.7984943977591037) 51%, rgba(0,29,11,0.7732843137254902) 65%, rgba(0,42,12,0.6724439775910365) 75%, rgba(0,56,4,0.5575980392156863) 100%);
+}
+.footer{
+  list-style:none;
+}
+
+.footer.ul1{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer.ul2{
+  display:flex;
+}
+
+.footer.li{
+  position: relative;
+}
+
+
+.formacion.main{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(49, 67, 53, 0.46);
+}
+.formacion.li{
+  margin-top: 1vh;
+}
+
+
+.work.group{
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 20vh;
+}
+
+.work.card{
+  flex: 1 0 0%;
+  margin-bottom: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: rgba(27, 37, 29, 0.85);
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+}
+.work.card.body{
+  padding: 1rem 1rem;
+}
+a.work.card{
+  text-decoration:none;
+  color: white;
+
 }
