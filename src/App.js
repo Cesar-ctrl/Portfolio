@@ -22,10 +22,10 @@ function App() {
       <ParticleBackground />
       <div className="container mt-5">
         <header className="btn-group">
-          <Link className="btn btn-dark btn-sm" to="/inicio">
+          <Link className="btn btn-dark btn-sm" to="/inicio" onClick={() => setPage('inicio')}>
             Inicio
           </Link>
-          <Link className="btn btn-dark btn-sm" to="/formacion">
+          <Link className="btn btn-dark btn-sm" to="/formacion" onClick={() => setPage('formacion')}>
             Formacion
           </Link>
           <Link className="btn btn-dark btn-sm" to="/portfolio">
@@ -39,7 +39,6 @@ function App() {
           </Link>
         </header>
 
-        <Inicio />
 
         <hr />
         <Routes>
