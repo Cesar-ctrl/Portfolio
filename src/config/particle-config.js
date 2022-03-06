@@ -1,14 +1,16 @@
+const hoja =process.env.PUBLIC_URL+"/img/hoja2.png"
+
 const particlesConfig = {
     particles: {
       number: {
-        value: 71,
+        value: 30,
         density: {
           enable: true,
           value_area: 800
         }
       },
       color: {
-        value: "#eb4034"
+        value: "#fff"
       },
       shape: {
         type: [
@@ -23,10 +25,10 @@ const particlesConfig = {
           nb_sides: 5
         },
         image: {
-          src: "../../public/img/hoja2.png",
-          width: 70,
-          height: 150,
-          opacity: 0.4
+          src: hoja,
+          width: 50,
+          height: 160,
+          opacity: 1
         }
       },
       opacity: {
