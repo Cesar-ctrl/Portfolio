@@ -89,6 +89,7 @@ footer{
   align-items: center;
   background: rgb(2,1,1);
   background: linear-gradient(0deg, rgba(2,1,1,0.874124649859944) 17%, rgba(2,1,1,0.8965336134453782) 28%, rgba(2,1,1,0.874124649859944) 38%, rgba(2,1,1,0.7984943977591037) 51%, rgba(0,29,11,0.7732843137254902) 65%, rgba(0,42,12,0.6724439775910365) 75%, rgba(0,56,4,0.5575980392156863) 100%);
+  margin-top: 15vh;
 }
 .footer{
   list-style:none;
@@ -109,6 +110,7 @@ footer{
 
 
 .formacion.main{
+  padding: 2vw;
   display: flex;
   flex-direction: column;
   background-color: rgba(49, 67, 53, 0.46);
@@ -124,7 +126,7 @@ footer{
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  padding-bottom: 20vh;
+
 }
 
 .work.card{
@@ -147,4 +149,26 @@ a.work.card{
   text-decoration:none;
   color: white;
 
+}
+
+.contacto.form{
+  position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 18vh;
+}
+form{
+  display: flex;
+    flex-direction: column;
+}
+label{
+  padding-left: 2vw;
+  padding-top: 2vh;
+  min-width: 40vw;
+  padding-bottom: 1vh;
+}
+textarea{
+  padding-bottom: 2vh;
+  margin-bottom: 2vh;
 }
