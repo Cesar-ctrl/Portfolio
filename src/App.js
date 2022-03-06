@@ -1,4 +1,5 @@
 import React from "react";
+import {useState} from "react";
 import { BrowserRouter as Router, Routes, Switch, Route,  Link } from "react-router-dom";
 import Inicio from "./Components/Inicio"
 import Contacto from "./Components/Contacto"
@@ -13,6 +14,9 @@ import ParticleBackground from "./ParticleBackground";
 //React Router proporciona un <Link> componente para crear enlaces en su aplicación. 
 //Donde sea que renderice un <Link>, se representará un ancla <a> en su documento HTML.
 function App() {
+
+  const [page, setPage] = useState('about')
+
   return(
     <Router>
       <ParticleBackground />
@@ -24,7 +28,7 @@ function App() {
           <Link className="btn btn-dark btn-sm" to="/formacion">
             Formacion
           </Link>
-          <Link className="btn btn-dark btn-sm" to="/work">
+          <Link className="btn btn-dark btn-sm" to="/portfolio">
             Work
           </Link>
           <Link className="btn btn-dark btn-sm" to="/contacto">
@@ -35,13 +39,13 @@ function App() {
           </Link>
         </header>
 
-        
+        <Inicio />
 
         <hr />
         <Routes>
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/formacion" element={<Formacion />} />
-          <Route path="/work" element={<Work />} />
+          <Route path="/portfolio" element={<Work />} />
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/inicio" element={<Inicio />} />
           <Route path="/nosotros/:id" element={<Usuarios />} />
@@ -64,7 +68,7 @@ function App() {
               Formacion
             </Link></li>
           <li className="nav-item">
-            <Link className="nav-link px-2 text-muted" to="/work">
+            <Link className="nav-link px-2 text-muted" to="/portfolio">
               Work
             </Link></li>
           <li className="nav-item">
