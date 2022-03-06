@@ -35,7 +35,7 @@ function App() {
               Contacto
             </Link>
             <Link className="btn btn-dark btn-sm" to="/game">
-              Game
+              Snake Game
             </Link>
           </div>
         </header>
