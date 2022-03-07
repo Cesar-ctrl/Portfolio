@@ -148,6 +148,8 @@ footer{
   background-clip: border-box;
   border: 1px solid rgba(0,0,0,.125);
   border-radius: 0.25rem;
+  flex-direction: column-reverse;
+    justify-content: flex-end;
 }
 .work.card.body{
   padding: 1rem 1rem;
@@ -156,6 +158,10 @@ a.work.card{
   text-decoration:none;
   color: white;
 
+}
+
+a img{
+  flex-direction: column-reverse;
 }
 
 
