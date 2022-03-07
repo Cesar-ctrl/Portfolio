@@ -6,12 +6,11 @@ const Works = () => {
         <h1>Works</h1>
         <div className="work group">
             <a href='https://github.com/Cesar-ctrl/cesarinsta' className="work card card-body">
-                
-                
-                
+                <article>
                     To increase my skills as a Full-Stack developer, I developed a social network using PHP, Laravel, and
 Javascript. The project is deployed, you can upload images, comment on images, like images, view user
 profiles and delete or edit comments on your own posts.
+</article>
                 <img src={process.env.PUBLIC_URL + '/img/home.PNG'} alt="home" />{/** process.env.PUBLIC_URL trae la url baseo url pública. */}
                 
             </a>
@@ -20,8 +19,8 @@ profiles and delete or edit comments on your own posts.
                 
                 
                     Designed and developed a web guide about Dungeons and Dragons game, using HTML, CSS and
-JavaScript, among other technologies. This project helped me to improve my layout skills, as well as my
-javascript knowledge. It also allowed me to learn how to consume REST web services.
+JavaScript, among other technologies. <span>This project helped me to improve my layout skills, as well as my
+javascript knowledge. It also allowed me to learn how to consume REST web services.</span>
                 <img src={process.env.PUBLIC_URL +'/img/Dnd.PNG'} alt="home"/>
             </a>
 
